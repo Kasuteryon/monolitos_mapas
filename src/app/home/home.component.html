@@ -1,29 +1,147 @@
-<div class="container">
-    <div class="forest-scene">
-      <svg viewBox="0 0 500 500" class="forest-svg">
-        <!-- Sol -->
-        <circle cx="250" cy="100" r="40" fill="yellow"></circle>
+<header id="header">
+    <a href="#" class="logo">Parallax</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#sec">About</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </header>
   
-        <!-- Montañas -->
-        <polygon points="50,400 200,100 350,400" fill="#8B8B83"></polygon>
-        <polygon points="300,400 450,200 600,400" fill="#9B9B93"></polygon>
+  <!-- Top Section (Above Water) -->
+  <section>
+    <img src="assets/images/land/sky.png" id="sky" class="wallpaper" alt="sky background">
+    <img src="assets/images/land/sun.png" id="sun" alt="sun">
+    <img src="assets/images/land/mountains.png" id="mountains" class="wallpaper" alt="mountains">
+    <img src="assets/images/land/cloud.png" id="cloud" alt="cloud">
+    <h2 id="text"><span>"Embrace the Thrill of"</span><br />Exploration</h2>
+    <img src="assets/images/land/forest.png" id="forest" alt="forest">
+    <img src="assets/images/land/bird1.png" id="bird1" alt="bird 1">
+    <img src="assets/images/land/bird2.png" id="bird2" alt="bird 2">
+    <a href="#sec" id="explore">Explore</a>
+    <img src="assets/images/land/rocks.png" id="rocks" alt="rocks">
+    <img src="assets/images/land/splash.png" id="splash" alt="splash">
+    <img src="assets/images/land/water.png" id="water" alt="water">
+  </section>
   
-        <!-- Río -->
-        <path
-          d="M 100 400 C 200 300, 300 500, 400 400"
-          stroke="#4FC3F7"
-          fill="none"
-          stroke-width="8"
-        ></path>
+  <!-- Middle Section (Below Water) with Content -->
+  <div class="sec" id="sec">
+    <img src="assets/images/sea/sea1.png" id="sea1" class="undersea" alt="sea element">
+    <img src="assets/images/sea/sea2.png" id="sea2" class="undersea" alt="sea element">
+    <img src="assets/images/sea/sea3.png" id="sea3" class="undersea" alt="sea element">
+    <img src="assets/images/sea/sea4.png" id="sea4" class="undersea" alt="sea element">
+    <img src="assets/images/sea/sea5.png" id="sea5" class="undersea" alt="sea element">
+    <img src="assets/images/sea/sea6.png" id="sea6" class="undersea" alt="sea element">
+    <img src="assets/images/sea/sea7.png" id="sea7" class="undersea" alt="sea element">
+    <img src="assets/images/sea/sea8.png" id="sea8" class="undersea" alt="sea element">
   
-        <!-- Árboles -->
-        <g *ngFor="let tree of trees" [attr.transform]="'translate(' + tree.x + ',' + tree.y + ')'">
-          <rect width="10" height="50" fill="#8B5A2B"></rect>
-          <circle cx="5" cy="-10" r="30" fill="green"></circle>
-        </g>
-      </svg>
+    <h2>Parallax Scrolling Effects</h2>
+    <div id="name">By Vineet Kumar</div>
+  
+    <div class="glass">
+      <h3>What is parallax scrolling?</h3>
+      <p>
+        Parallax scrolling is a web design technique in which the website background moves at a slower pace than the
+        foreground. This results in a 3D effect as visitors scroll down the site, adding a sense of depth and creating a
+        more immersive browsing experience.
+      </p>
     </div>
   
-    <button class="start-btn" (click)="navigateToForest()">Comenzar</button>
+    <div class="glass">
+      <h3>Why should I use parallax graphics?</h3>
+      <ul>
+        <p>There are two main reasons why designers should try parallax graphics:</p>
+        <li>
+          <h4>It helps tell a story</h4>
+          <p>
+            Parallax graphics are ideal for storytelling. Good design is all about communication—and when we design
+            websites, we want to communicate with our visitors and tell a compelling story about our product, service, or
+            brand.
+          </p>
+        </li>
+        <li>
+          <h4>It helps to improve user engagement</h4>
+          <p>
+            A well-crafted parallax page gives the user the type of dynamic experience that tends to keep them on the
+            page longer.
+          </p>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="glass">
+      <h3>Tips for adding a parallax effect:</h3>
+      <ul>
+        <li>
+          <h4>Use it selectively</h4>
+          <p>
+            Parallax scrolling is much more powerful when used on specific elements rather than everywhere.
+          </p>
+        </li>
+        <li>
+          <h4>Image compression</h4>
+          <p>
+            Optimize your media files to avoid slow loading speeds.
+          </p>
+        </li>
+        <li>
+          <h4>Play with color</h4>
+          <p>
+            Use background and foreground colors to enhance depth perception.
+          </p>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Fish and Seabed -->
+    <img src="assets/images/sea/fish1.png" id="fish1" class="fishes" alt="fish">
+    <img src="assets/images/sea/fish2.png" id="fish2" class="fishes" alt="fish">
+    <img src="assets/images/sea/fish3.png" id="fish3" class="fishes" alt="fish">
+    <img src="assets/images/sea/fish4.png" id="fish4" class="fishes" alt="fish">
+    <img src="assets/images/sea/oceanbed.png" id="seabed" class="fishes" alt="ocean bed">
+  
+    <!-- Bubbles Animation -->
+    <div class="bubbles">
+      <img src="assets/images/sea/bubble.png" alt="bubble">
+      <img src="assets/images/sea/bubble.png" alt="bubble">
+      <img src="assets/images/sea/bubble.png" alt="bubble">
+      <img src="assets/images/sea/bubble.png" alt="bubble">
+      <img src="assets/images/sea/bubble.png" alt="bubble">
+    </div>
   </div>
   
+  <!-- Footer -->
+  <div class="footer" id="footer">
+    <p>Do Follow Me On:</p>
+    <div class="wrapper">
+      <div class="social-media">
+        <div class="icon">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <span>Instagram</span>
+      </div>
+      <div class="social-media">
+        <div class="icon">
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <span>LinkedIn</span>
+      </div>
+      <div class="social-media">
+        <div class="icon">
+          <i class="fa-brands fa-github"></i>
+        </div>
+        <span>GitHub</span>
+      </div>
+      <div class="social-media">
+        <div class="icon">
+          <i class="fa-solid fa-link"></i>
+        </div>
+        <span>Portfolio</span>
+      </div>
+    </div>
+    <span>A website created by Vineet Kumar ❤️</span>
+  </div>
+  
+  <!-- Scroll to Top Button -->
+  <a id="top" href="#">
+    <i class="fas fa-arrow-up"></i>
+  </a>
