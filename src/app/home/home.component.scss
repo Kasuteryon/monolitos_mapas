@@ -40,7 +40,7 @@ html {
 }
 
 #header .logo {
-    color: #002431;
+    color: #185500;
     font-weight: 800;
     font-size: 2.5em;
     text-decoration: none;
@@ -64,13 +64,13 @@ html {
     text-decoration: none;
     /* To prevent Underline */
     padding: 6px 15px;
-    color: #003549;
+    color: #185500;
     border-radius: 20px;
 }
 
 #header ul li a:hover,
 #header ul li a.active {
-    background: #003549;
+    background: #185500;
     color: white;
 }
 
@@ -85,6 +85,7 @@ section {
 }
 
 /* To blend section color with water color */
+// SECTION FOR GREEN COLOR
 section::before {
     content: '';
     position: absolute;
@@ -92,7 +93,7 @@ section::before {
     left: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #085a7a, transparent);
+    background: linear-gradient(to top, #4b1212, transparent);
     z-index: 10;
 }
 
@@ -117,7 +118,7 @@ section #text span {
 
 section #text {
     position: absolute;
-    color: #004660;
+    color: #ebc000;
     font-size: 10vw;
     text-align: center;
     line-height: 0.55em;
@@ -133,7 +134,7 @@ section #text {
     /* To prevent Underline */
     padding: 8px 25px;
     background: white;
-    color: #003549;
+    color: #185500;
     font-size: 1.3em;
     font-weight: bold;
     letter-spacing: 2px;
@@ -143,7 +144,7 @@ section #text {
 }
 
 #explore:hover {
-    background: #003549;
+    background: #185500;
     color: white;
 }
 
@@ -183,7 +184,7 @@ section #text {
 .sec {
     position: relative;
     padding: 10%;
-    background: #085a7a;
+    background: #4b1212;
     padding-bottom: 15%;
     z-index: 50;
     overflow: hidden;
