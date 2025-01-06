@@ -1,0 +1,13 @@
+@keyframes zoom-in {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+  
+  .route-transition {
+    animation: zoom-in 1.2s ease-in-out;
+  }
+  

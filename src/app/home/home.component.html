@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="forest-scene">
+      <svg viewBox="0 0 500 500" class="forest-svg">
+        <!-- Sol -->
+        <circle cx="250" cy="100" r="40" fill="yellow"></circle>
+  
+        <!-- Montañas -->
+        <polygon points="50,400 200,100 350,400" fill="#8B8B83"></polygon>
+        <polygon points="300,400 450,200 600,400" fill="#9B9B93"></polygon>
+  
+        <!-- Río -->
+        <path
+          d="M 100 400 C 200 300, 300 500, 400 400"
+          stroke="#4FC3F7"
+          fill="none"
+          stroke-width="8"
+        ></path>
+  
+        <!-- Árboles -->
+        <g *ngFor="let tree of trees" [attr.transform]="'translate(' + tree.x + ',' + tree.y + ')'">
+          <rect width="10" height="50" fill="#8B5A2B"></rect>
+          <circle cx="5" cy="-10" r="30" fill="green"></circle>
+        </g>
+      </svg>
+    </div>
+  
+    <button class="start-btn" (click)="navigateToForest()">Comenzar</button>
+  </div>
+  
