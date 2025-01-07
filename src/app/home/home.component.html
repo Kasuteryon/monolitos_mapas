@@ -1,8 +1,8 @@
 <header id="header">
-    <a href="#" class="logo">Desmontes</a>
+    <a href="#" class="logo">Monolitos en México</a>
     <ul>
       <li><a href="#" class="active">Inicio</a></li>
-      <li><a href="#sec">Acerca de</a></li>
+      <li><a href="#sec">Acerca</a></li>
       <li><a href="#footer">Contacto</a></li>
     </ul>
   </header>
@@ -13,7 +13,7 @@
     <img src="assets/images/land/sun.png" id="sun" alt="sun">
     <img src="assets/images/land/mountains.png" id="mountains" class="wallpaper" alt="mountains">
     <img src="assets/images/land/cloud.png" id="cloud" alt="cloud">
-    <h2 id="text"><span>"Explora como nunca antes"</span><br />Desmontes</h2>
+    <h2 id="text"><span>"Explora como nunca antes"</span><br />Monolitos en México</h2>
     <img src="assets/images/land/forest.png" id="forest" alt="forest">
     <img src="assets/images/land/cloud.png" id="bird1" alt="bird 1">
     <img src="assets/images/land/cloud.png" id="bird2" alt="bird 2">
@@ -21,6 +21,18 @@
     <img src="assets/images/land/rocks.png" id="rocks" alt="rocks">
     <!-- <img src="assets/images/land/splash.png" id="splash" alt="splash">
     <img src="assets/images/land/water.png" id="water" alt="water"> -->
+  </section>
+
+  <section class="sec" id="sec">
+    <google-map height="700px" width="1000px" [options]="options" (polygonClick)="onPolygonClick()">
+      <map-polygon [paths]="polygonCoords" [options]="polygonOptions"></map-polygon>
+      <map-marker *ngFor="let marker of markers" 
+        [position]="marker.position" 
+        [title]="marker.title" 
+        [icon]="marker.icon"
+        (mapClick)="onMarkerClick(marker.title)">
+      </map-marker>
+    </google-map>
   </section>
   
   <!-- Middle Section (Below Water) with Content -->
