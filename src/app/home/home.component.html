@@ -1,19 +1,20 @@
 <header id="header">
-    <a href="#" class="logo">Monolitos en México</a>
+    <a href="#" class="logo">Museo Nacional de los Monolitos</a>
     <ul>
       <li><a href="#" class="active">Inicio</a></li>
       <li><a href="#sec">Acerca</a></li>
       <li><a href="#footer">Contacto</a></li>
     </ul>
+    
   </header>
   
   <!-- Top Section (Above Water) -->
   <section>
     <img src="assets/images/land/sky.png" id="sky" class="wallpaper" alt="sky background">
-    <img src="assets/images/land/sun.png" id="sun" alt="sun">
+    <!-- <img src="assets/images/land/sun.png" id="sun" alt="sun"> -->
     <img src="assets/images/land/mountains.png" id="mountains" class="wallpaper" alt="mountains">
     <img src="assets/images/land/cloud.png" id="cloud" alt="cloud">
-    <h2 id="text"><span>"Explora como nunca antes"</span><br />Monolitos en México</h2>
+    <h2 id="text"><span>Explora interactivamente</span><br />Monolitos en México</h2>
     <img src="assets/images/land/forest.png" id="forest" alt="forest">
     <img src="assets/images/land/cloud.png" id="bird1" alt="bird 1">
     <img src="assets/images/land/cloud.png" id="bird2" alt="bird 2">
@@ -23,17 +24,227 @@
     <img src="assets/images/land/water.png" id="water" alt="water"> -->
   </section>
 
-  <section class="sec" id="sec">
-    <google-map height="700px" width="1000px" [options]="options" (polygonClick)="onPolygonClick()">
-      <map-polygon [paths]="polygonCoords" [options]="polygonOptions"></map-polygon>
-      <map-marker *ngFor="let marker of markers" 
-        [position]="marker.position" 
-        [title]="marker.title" 
-        [icon]="marker.icon"
-        (mapClick)="onMarkerClick(marker.title)">
-      </map-marker>
-    </google-map>
-  </section>
+  <div class="sec2">
+    <div class="ag-format-container">
+      <div class="ag-courses_box">
+        <div class="ag-courses_item">
+          <a class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Monolito La Poza
+            </div>
+            <div>
+             Pequeña descripcion de localizacion o modelo, etc
+              
+            </div>
+            <!-- <a rel="ar" href="assets/ar/la_poza.usdz">
+              <div class="ag-courses-item_date-box">
+                Monolito en RA:
+                <span class="ag-courses-item_date">
+                  Ver
+                </span>
+              </div>
+            </a>
+             -->
+            <br>
+             <div class="ag-courses-item_date-box">
+              Monolito en
+              <span class="ag-courses-item_date">
+                Realidad Aumentada
+              </span>
+            </div>
+             <model-viewer alt="Monolito La Poza" 
+             src="assets/ar/la_poza.glb" 
+             ios-src="assets/ar/la_poza.usdz"
+             ar
+             ar-modes="webxr scene-viewer quick-look"
+             >
+             </model-viewer>
+
+            
+              
+            <!-- <div class="ag-courses-item_date-box">
+              Monolito en 360°:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div> -->
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Monolito La Joya
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Monolito en RA:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+
+            <div class="ag-courses-item_date-box">
+              Monolito en 360°:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Monolito 3
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Monolito en RA:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+
+            <div class="ag-courses-item_date-box">
+              Monolito en 360°:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Monolito 4
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Monolito en RA:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+
+            <div class="ag-courses-item_date-box">
+              Monolito en 360°:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Monolito 5
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Monolito en RA:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+
+            <div class="ag-courses-item_date-box">
+              Monolito en 360°:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Monolito 6
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Monolito en RA:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+
+            <div class="ag-courses-item_date-box">
+              Monolito en 360°:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg">
+            </div>
+            <div class="ag-courses-item_title">
+              Monolito 7
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Monolito en RA:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+
+            <div class="ag-courses-item_date-box">
+              Monolito en 360°:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Monolito 8
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Monolito en RA:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+
+            <div class="ag-courses-item_date-box">
+              Monolito en 360°:
+              <span class="ag-courses-item_date">
+                Ver
+              </span>
+            </div>
+          </a>
+        </div>
+    
+      </div>
+    </div>
+  </div>
+
   
   <!-- Middle Section (Below Water) with Content -->
   <div class="sec" id="sec">

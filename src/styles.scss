@@ -191,6 +191,13 @@ section #text {
     overflow: hidden;
 }
 
+.sec2 {
+    position: relative;
+    overflow: hidden;
+    background: #4b1212;
+    z-index: 50;
+}
+
 /* Properties for text content */
 .sec h2 {
     font-size: 3.5em;
