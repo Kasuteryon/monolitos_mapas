@@ -1,4 +1,7 @@
-<!-- Grid responsivo 2 columnas (1 en móviles) -->
+<!-- Toggle solo para móvil: controla "Ver más / Ver menos" -->
+<input id="showAllToggle" type="checkbox" hidden>
+
+<!-- Grid responsivo (hasta 4 columnas) -->
 <div class="portfolio-grid">
   <figure
     class="card"
@@ -24,7 +27,13 @@
   </figure>
 </div>
 
-<!-- Overlay a pantalla completa (click fuera cierra) -->
+<!-- Botón Ver más / Ver menos (solo se muestra en 1 columna) -->
+<label class="show-more-btn" for="showAllToggle">
+  <span class="more">Ver más</span>
+  <span class="less">Ver menos</span>
+</label>
+
+<!-- Overlay a pantalla completa -->
 <div
   class="overlay"
   *ngIf="isOverlayVisible"
@@ -35,7 +44,6 @@
   (keydown.escape)="closeOverlay()"
   tabindex="0"
 >
-  <!-- Contenido centrado; el click dentro NO cierra -->
   <div class="overlay__content" (click)="$event.stopPropagation()">
     <button
       class="overlay__close"
@@ -49,7 +57,6 @@
       </svg>
     </button>
 
-    <!-- La imagen se adapta sin deformarse ni desbordar -->
     <img
       class="overlay__img"
       [src]="selectedImageSrc || ''"

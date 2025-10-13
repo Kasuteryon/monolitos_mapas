@@ -1,15 +1,17 @@
-/* ====== Grid ====== */
+/* ====== Grid con máximo 4 columnas ====== */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(12px, 2vw, 20px);
   width: 100%;
 }
-@media (max-width: 640px) {
-  .portfolio-grid { grid-template-columns: 1fr; }
-}
 
-/* ====== Card ====== */
+/* Ajustes responsive */
+@media (max-width: 1200px) { .portfolio-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px)  { .portfolio-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .portfolio-grid { grid-template-columns: 1fr; } }
+
+/* ====== Tarjetas ====== */
 .card {
   position: relative;
   margin: 0;
@@ -19,10 +21,9 @@
   background: #0e0e0e;
   cursor: pointer;
   outline: none;
-  aspect-ratio: 16 / 10;     /* no se deforma la miniatura */
+  aspect-ratio: 16 / 10;
   display: grid;
   place-items: center;
-  transform: translateZ(0);
   transition: transform .25s ease, box-shadow .25s ease;
 }
 .card:focus-visible,
@@ -33,12 +34,9 @@
 .card__img {
   width: 100%;
   height: 100%;
-  object-fit: cover;          /* llena la tarjeta manteniendo proporción */
+  object-fit: cover;
   object-position: center;
   display: block;
-  user-select: none;
-  -webkit-user-drag: none;
-  pointer-events: none;
 }
 .card__overlay {
   position: absolute;
@@ -48,7 +46,6 @@
   background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.25));
   opacity: 0;
   transition: opacity .25s ease, backdrop-filter .25s ease;
-  backdrop-filter: blur(0px);
 }
 .card:hover .card__overlay,
 .card:focus-visible .card__overlay {
@@ -56,27 +53,66 @@
   backdrop-filter: blur(2px);
 }
 .card__cta {
-  appearance: none;
   border: none;
   border-radius: 999px;
-  padding: 12px 18px;
+  padding: 10px 16px;
   font-weight: 700;
-  letter-spacing: .3px;
   font-size: 14px;
-  color: #0f0f0f;
-  background: #ffffff;
-  box-shadow: 0 8px 24px rgba(255,255,255,.18), inset 0 -1px 0 rgba(0,0,0,.08);
-  transform: translateY(6px);
+  background: #f9b234;          /* amarillo cálido visible */
+  color: #111;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transform: translateY(8px);
   opacity: 0;
-  transition: transform .25s ease, opacity .25s ease, box-shadow .2s ease;
+  transition: transform .25s ease, opacity .25s ease, background .2s ease;
 }
 .card:hover .card__cta,
 .card:focus-visible .card__cta {
   transform: translateY(0);
   opacity: 1;
 }
-.card__cta:hover { box-shadow: 0 10px 28px rgba(255,255,255,.22), inset 0 -1px 0 rgba(0,0,0,.12); }
-.card__cta:active { transform: translateY(1px) scale(.98); }
+.card__cta:hover {
+  background: #ffd86b;
+}
+
+/* ====== Mostrar solo 4 ítems en móvil ====== */
+.show-more-btn {
+  display: none;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 999px;
+  padding: 12px 16px;
+  background: #f9b234;
+  color: #111;
+  box-shadow: 0 6px 20px rgba(0,0,0,.25);
+  cursor: pointer;
+  text-align: center;
+  transition: background .2s ease;
+}
+.show-more-btn:hover {
+  background: #ffd86b;
+}
+
+@media (max-width: 640px) {
+  #showAllToggle:not(:checked) ~ .portfolio-grid .card:nth-child(n + 5) {
+    display: none;
+  }
+
+  .show-more-btn { display: inline-flex; }
+
+  .show-more-btn .less { display: none; }
+  #showAllToggle:checked ~ .show-more-btn .more { display: none; }
+  #showAllToggle:checked ~ .show-more-btn .less { display: inline; }
+
+  #showAllToggle:checked ~ .portfolio-grid .card {
+    display: grid;
+  }
+}
 
 /* ====== Overlay ====== */
 .overlay {
@@ -88,62 +124,54 @@
   justify-content: center;
   padding: clamp(12px, 3vw, 32px);
   background: rgba(10,10,10,0.82);
-  backdrop-filter: blur(6px) saturate(110%);
+  backdrop-filter: blur(6px);
   animation: fadeIn .18s ease;
-  overscroll-behavior: contain;   /* evita “scroll del body” detrás */
 }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-/* El contenedor se adapta al tamaño real hasta un máximo de viewport */
 .overlay__content {
   position: relative;
   background: #0b0b0b;
   border-radius: 16px;
   box-shadow: 0 12px 48px rgba(0,0,0,.5);
-  padding: 0;
   max-width: min(96vw, 1200px);
   max-height: min(90vh, 900px);
-  overflow: hidden;   /* por seguridad */
-  display: block;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-/* La imagen NUNCA se deforma ni desborda el contenedor */
 .overlay__img {
-  display: block;
-  width: auto;
-  height: auto;
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;   /* respeta proporción */
-  object-position: center;
-  user-select: none;
-  -webkit-user-drag: none;
+  object-fit: contain;
 }
 
-/* Botón cerrar siempre visible */
+/* ====== Botón cerrar (ícono visible) ====== */
 .overlay__close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   height: 40px;
   width: 40px;
   border-radius: 999px;
-  border: 0;
-  background: rgba(255,255,255,.95);
+  border: none;
+  background: #f9b234;   /* color visible */
   color: #111;
   display: grid;
   place-items: center;
   cursor: pointer;
-  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   transition: transform .2s ease, background .2s ease;
   z-index: 2;
 }
-.overlay__close:hover { transform: scale(1.05); background: #fff; }
-.overlay__close:active { transform: scale(.98); }
-.overlay__close .icon { width: 20px; height: 20px; fill: currentColor; }
-
-/* ====== Fallback navegadores sin aspect-ratio ====== */
-@supports not (aspect-ratio: 16 / 10) {
-  .card { height: 0; padding-bottom: calc(100% * 10 / 16); }
-  .card__img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.overlay__close:hover {
+  background: #ffd86b;
+  transform: scale(1.05);
+}
+.overlay__close:active { transform: scale(.95); }
+.overlay__close .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
