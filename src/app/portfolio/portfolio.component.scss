@@ -1,0 +1,149 @@
+/* ====== Grid ====== */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(12px, 2vw, 20px);
+  width: 100%;
+}
+@media (max-width: 640px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+}
+
+/* ====== Card ====== */
+.card {
+  position: relative;
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  background: #0e0e0e;
+  cursor: pointer;
+  outline: none;
+  aspect-ratio: 16 / 10;     /* no se deforma la miniatura */
+  display: grid;
+  place-items: center;
+  transform: translateZ(0);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card:focus-visible,
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0,0,0,.32);
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* llena la tarjeta manteniendo proporción */
+  object-position: center;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+.card__overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.25));
+  opacity: 0;
+  transition: opacity .25s ease, backdrop-filter .25s ease;
+  backdrop-filter: blur(0px);
+}
+.card:hover .card__overlay,
+.card:focus-visible .card__overlay {
+  opacity: 1;
+  backdrop-filter: blur(2px);
+}
+.card__cta {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  font-size: 14px;
+  color: #0f0f0f;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(255,255,255,.18), inset 0 -1px 0 rgba(0,0,0,.08);
+  transform: translateY(6px);
+  opacity: 0;
+  transition: transform .25s ease, opacity .25s ease, box-shadow .2s ease;
+}
+.card:hover .card__cta,
+.card:focus-visible .card__cta {
+  transform: translateY(0);
+  opacity: 1;
+}
+.card__cta:hover { box-shadow: 0 10px 28px rgba(255,255,255,.22), inset 0 -1px 0 rgba(0,0,0,.12); }
+.card__cta:active { transform: translateY(1px) scale(.98); }
+
+/* ====== Overlay ====== */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(12px, 3vw, 32px);
+  background: rgba(10,10,10,0.82);
+  backdrop-filter: blur(6px) saturate(110%);
+  animation: fadeIn .18s ease;
+  overscroll-behavior: contain;   /* evita “scroll del body” detrás */
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* El contenedor se adapta al tamaño real hasta un máximo de viewport */
+.overlay__content {
+  position: relative;
+  background: #0b0b0b;
+  border-radius: 16px;
+  box-shadow: 0 12px 48px rgba(0,0,0,.5);
+  padding: 0;
+  max-width: min(96vw, 1200px);
+  max-height: min(90vh, 900px);
+  overflow: hidden;   /* por seguridad */
+  display: block;
+}
+
+/* La imagen NUNCA se deforma ni desborda el contenedor */
+.overlay__img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;   /* respeta proporción */
+  object-position: center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Botón cerrar siempre visible */
+.overlay__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(255,255,255,.95);
+  color: #111;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  transition: transform .2s ease, background .2s ease;
+  z-index: 2;
+}
+.overlay__close:hover { transform: scale(1.05); background: #fff; }
+.overlay__close:active { transform: scale(.98); }
+.overlay__close .icon { width: 20px; height: 20px; fill: currentColor; }
+
+/* ====== Fallback navegadores sin aspect-ratio ====== */
+@supports not (aspect-ratio: 16 / 10) {
+  .card { height: 0; padding-bottom: calc(100% * 10 / 16); }
+  .card__img { position: absolute; inset: 0; width: 100%; height: 100%; }
+}

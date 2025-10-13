@@ -1,0 +1,60 @@
+<!-- Grid responsivo 2 columnas (1 en móviles) -->
+<div class="portfolio-grid">
+  <figure
+    class="card"
+    *ngFor="let project of projects"
+    (click)="openOverlay(project)"
+    tabindex="0"
+    (keydown.enter)="openOverlay(project)"
+    (keydown.space)="openOverlay(project)"
+    role="button"
+    aria-label="Ver más"
+  >
+    <img
+      class="card__img"
+      [src]="project.imageSrc"
+      alt="Imagen del proyecto"
+      loading="lazy"
+      decoding="async"
+    />
+
+    <figcaption class="card__overlay">
+      <button class="card__cta" type="button">Ver más</button>
+    </figcaption>
+  </figure>
+</div>
+
+<!-- Overlay a pantalla completa (click fuera cierra) -->
+<div
+  class="overlay"
+  *ngIf="isOverlayVisible"
+  (click)="closeOverlay()"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Vista de imagen a tamaño completo"
+  (keydown.escape)="closeOverlay()"
+  tabindex="0"
+>
+  <!-- Contenido centrado; el click dentro NO cierra -->
+  <div class="overlay__content" (click)="$event.stopPropagation()">
+    <button
+      class="overlay__close"
+      type="button"
+      (click)="closeOverlay()"
+      aria-label="Cerrar"
+      title="Cerrar"
+    >
+      <svg viewBox="0 0 24 24" class="icon" focusable="false" aria-hidden="true">
+        <path d="M18.3 5.7a1 1 0 0 0-1.4-1.4L12 9.17 7.1 4.3A1 1 0 0 0 5.7 5.7L10.6 10.6 5.7 15.5a1 1 0 1 0 1.4 1.4L12 12.03l4.9 4.87a1 1 0 0 0 1.4-1.4l-4.9-4.9 4.8-4.9Z"/>
+      </svg>
+    </button>
+
+    <!-- La imagen se adapta sin deformarse ni desbordar -->
+    <img
+      class="overlay__img"
+      [src]="selectedImageSrc || ''"
+      alt="Imagen ampliada"
+      draggable="false"
+    />
+  </div>
+</div>

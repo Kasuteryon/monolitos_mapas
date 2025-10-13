@@ -1,14 +1,20 @@
-import { Component, HostListener, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, HostListener, CUSTOM_ELEMENTS_SCHEMA, AfterViewInit } from '@angular/core';
+import { PortfolioComponent } from '../portfolio/portfolio.component';
+
+declare var Reveal: any;
 
 @Component({
   selector: 'app-home',
   standalone: true, // This confirms it's a standalone component
-  imports: [], // For standalone, dependencies go here if needed
+  imports: [PortfolioComponent], // For standalone, dependencies go here if needed
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA] // This is correct for allowing <model-viewer>
 })
-export class HomeComponent {
+
+
+
+export class HomeComponent implements AfterViewInit {
 
   // HostListener is the Angular way to listen for events like scrolling
   @HostListener('window:scroll', [])
@@ -38,5 +44,18 @@ export class HomeComponent {
   // Your link function can remain
   openlink(url: string): void {
     window.open(url, "_blank");
+  }
+
+   ngAfterViewInit(): void {
+    Reveal.initialize({
+      embedded: true, 
+      hash: true, // Permite enlazar a slides específicas
+      center: false, // Alinea el contenido a la izquierda, mejor para párrafos
+      autoSlide: 5000, // Cambia de slide cada 5 segundos
+      loop: true, // Vuelve al inicio al terminar
+      transition: 'convex', // Efecto de transición
+      width: "100%",
+      margin: 0,
+    });
   }
 }
