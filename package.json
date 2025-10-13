@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "^19.0.0",
     "@angular/router": "^19.0.0",
     "@google/model-viewer": "^4.1.0",
-    "@rollup/rollup-darwin-x64": "^4.52.4",
+    "@rollup/rollup-darwin-arm64": "^4.52.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
