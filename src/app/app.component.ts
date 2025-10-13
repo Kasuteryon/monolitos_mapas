@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Analytics } from '@angular/fire/analytics';
 import { RouterModule } from '@angular/router';
 
 
@@ -10,5 +11,6 @@ import { RouterModule } from '@angular/router';
 })
 
 export class AppComponent {
+  private analytics = inject(Analytics);
   title = 'bosque-app';
 }
