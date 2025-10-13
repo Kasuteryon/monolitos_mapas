@@ -1,0 +1,388 @@
+[debug] [2025-10-13T00:00:55.082Z] ----------------------------------------------------------------------
+[debug] [2025-10-13T00:00:55.083Z] Command:       /usr/local/bin/firebase /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2025-10-13T00:00:55.084Z] CLI Version:   13.11.2
+[debug] [2025-10-13T00:00:55.084Z] Platform:      darwin
+[debug] [2025-10-13T00:00:55.084Z] Node Version:  v18.5.0
+[debug] [2025-10-13T00:00:55.085Z] Time:          Sun Oct 12 2025 19:00:55 GMT-0500 (Central Daylight Time)
+[debug] [2025-10-13T00:00:55.085Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-13T00:00:55.165Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-13T00:00:55.166Z] > authorizing via signed-in user (eduardocastellon2002@gmail.com)
+[debug] [2025-10-13T00:00:55.166Z] [iam] checking project desmontes-mapa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-10-13T00:00:55.168Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions [none]
+[debug] [2025-10-13T00:00:55.168Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions x-goog-quota-user=projects/desmontes-mapa
+[debug] [2025-10-13T00:00:55.169Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:00:55.588Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions 200
+[debug] [2025-10-13T00:00:55.590Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:00:55.592Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa [none]
+[debug] [2025-10-13T00:00:55.842Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa 200
+[debug] [2025-10-13T00:00:55.843Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa {"projectId":"desmontes-mapa","projectNumber":"391187962473","displayName":"desmontes-mapa","name":"projects/desmontes-mapa","resources":{"hostingSite":"desmontes-mapa"},"state":"ACTIVE","etag":"1_0f6f1fee-397e-42da-b0d6-85f8360fd6a6"}
+[debug] [2025-10-13T00:01:06.384Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/rollup/dist/native.js:64:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/rollup/dist/native.js:73:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:01:06.388Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/rollup/dist/native.js:64:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/rollup/dist/native.js:73:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:09:24.370Z] ----------------------------------------------------------------------
+[debug] [2025-10-13T00:09:24.371Z] Command:       /usr/local/bin/firebase /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2025-10-13T00:09:24.372Z] CLI Version:   13.11.2
+[debug] [2025-10-13T00:09:24.372Z] Platform:      darwin
+[debug] [2025-10-13T00:09:24.372Z] Node Version:  v18.5.0
+[debug] [2025-10-13T00:09:24.376Z] Time:          Sun Oct 12 2025 19:09:24 GMT-0500 (Central Daylight Time)
+[debug] [2025-10-13T00:09:24.376Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-13T00:09:24.461Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-13T00:09:24.462Z] > authorizing via signed-in user (eduardocastellon2002@gmail.com)
+[debug] [2025-10-13T00:09:24.463Z] [iam] checking project desmontes-mapa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-10-13T00:09:24.465Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions [none]
+[debug] [2025-10-13T00:09:24.465Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions x-goog-quota-user=projects/desmontes-mapa
+[debug] [2025-10-13T00:09:24.466Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:09:24.974Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions 200
+[debug] [2025-10-13T00:09:24.976Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:09:24.978Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa [none]
+[debug] [2025-10-13T00:09:25.330Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa 200
+[debug] [2025-10-13T00:09:25.331Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa {"projectId":"desmontes-mapa","projectNumber":"391187962473","displayName":"desmontes-mapa","name":"projects/desmontes-mapa","resources":{"hostingSite":"desmontes-mapa"},"state":"ACTIVE","etag":"1_0f6f1fee-397e-42da-b0d6-85f8360fd6a6"}
+[debug] [2025-10-13T00:09:35.022Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:09:35.026Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:12:32.204Z] ----------------------------------------------------------------------
+[debug] [2025-10-13T00:12:32.205Z] Command:       /usr/local/bin/firebase /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2025-10-13T00:12:32.205Z] CLI Version:   13.11.2
+[debug] [2025-10-13T00:12:32.205Z] Platform:      darwin
+[debug] [2025-10-13T00:12:32.205Z] Node Version:  v18.5.0
+[debug] [2025-10-13T00:12:32.209Z] Time:          Sun Oct 12 2025 19:12:32 GMT-0500 (Central Daylight Time)
+[debug] [2025-10-13T00:12:32.209Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-13T00:12:32.297Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-13T00:12:32.298Z] > authorizing via signed-in user (eduardocastellon2002@gmail.com)
+[debug] [2025-10-13T00:12:32.299Z] [iam] checking project desmontes-mapa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-10-13T00:12:32.301Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions [none]
+[debug] [2025-10-13T00:12:32.302Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions x-goog-quota-user=projects/desmontes-mapa
+[debug] [2025-10-13T00:12:32.302Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:12:32.671Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions 200
+[debug] [2025-10-13T00:12:32.674Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:12:32.675Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa [none]
+[debug] [2025-10-13T00:12:32.933Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa 200
+[debug] [2025-10-13T00:12:32.934Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa {"projectId":"desmontes-mapa","projectNumber":"391187962473","displayName":"desmontes-mapa","name":"projects/desmontes-mapa","resources":{"hostingSite":"desmontes-mapa"},"state":"ACTIVE","etag":"1_0f6f1fee-397e-42da-b0d6-85f8360fd6a6"}
+[debug] [2025-10-13T00:12:42.749Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:12:42.753Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:13:06.715Z] ----------------------------------------------------------------------
+[debug] [2025-10-13T00:13:06.716Z] Command:       /usr/local/bin/firebase /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2025-10-13T00:13:06.716Z] CLI Version:   13.11.2
+[debug] [2025-10-13T00:13:06.716Z] Platform:      darwin
+[debug] [2025-10-13T00:13:06.716Z] Node Version:  v18.5.0
+[debug] [2025-10-13T00:13:06.720Z] Time:          Sun Oct 12 2025 19:13:06 GMT-0500 (Central Daylight Time)
+[debug] [2025-10-13T00:13:06.720Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-13T00:13:06.804Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-13T00:13:06.805Z] > authorizing via signed-in user (eduardocastellon2002@gmail.com)
+[debug] [2025-10-13T00:13:06.805Z] [iam] checking project desmontes-mapa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-10-13T00:13:06.807Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions [none]
+[debug] [2025-10-13T00:13:06.808Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions x-goog-quota-user=projects/desmontes-mapa
+[debug] [2025-10-13T00:13:06.808Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:13:07.296Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions 200
+[debug] [2025-10-13T00:13:07.298Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:13:07.300Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa [none]
+[debug] [2025-10-13T00:13:07.526Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa 200
+[debug] [2025-10-13T00:13:07.526Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa {"projectId":"desmontes-mapa","projectNumber":"391187962473","displayName":"desmontes-mapa","name":"projects/desmontes-mapa","resources":{"hostingSite":"desmontes-mapa"},"state":"ACTIVE","etag":"1_0f6f1fee-397e-42da-b0d6-85f8360fd6a6"}
+[debug] [2025-10-13T00:13:17.224Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:13:17.228Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:15:48.282Z] ----------------------------------------------------------------------
+[debug] [2025-10-13T00:15:48.283Z] Command:       /usr/local/bin/firebase /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2025-10-13T00:15:48.284Z] CLI Version:   13.11.2
+[debug] [2025-10-13T00:15:48.284Z] Platform:      darwin
+[debug] [2025-10-13T00:15:48.284Z] Node Version:  v18.5.0
+[debug] [2025-10-13T00:15:48.287Z] Time:          Sun Oct 12 2025 19:15:48 GMT-0500 (Central Daylight Time)
+[debug] [2025-10-13T00:15:48.287Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-13T00:15:48.369Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-13T00:15:48.370Z] > authorizing via signed-in user (eduardocastellon2002@gmail.com)
+[debug] [2025-10-13T00:15:48.371Z] [iam] checking project desmontes-mapa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-10-13T00:15:48.373Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions [none]
+[debug] [2025-10-13T00:15:48.373Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions x-goog-quota-user=projects/desmontes-mapa
+[debug] [2025-10-13T00:15:48.374Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:15:48.878Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions 200
+[debug] [2025-10-13T00:15:48.880Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:15:48.882Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa [none]
+[debug] [2025-10-13T00:15:49.242Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa 200
+[debug] [2025-10-13T00:15:49.244Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa {"projectId":"desmontes-mapa","projectNumber":"391187962473","displayName":"desmontes-mapa","name":"projects/desmontes-mapa","resources":{"hostingSite":"desmontes-mapa"},"state":"ACTIVE","etag":"1_0f6f1fee-397e-42da-b0d6-85f8360fd6a6"}
+[info] 
+   Thank you for trying our early preview of Angular support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Angular version 14 - 17. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/angular
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-10-13T00:15:49.731Z] Error: Cannot find module '@angular-devkit/core/node'
+Require stack:
+- /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/utils.js
+- /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js
+- /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/controller.js
+- /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js
+- /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/commands/database-get.js
+- /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/commands/index.js
+- /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/index.js
+- /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:946:15)
+    at Function._resolveFilename (pkg/prelude/bootstrap.js:1951:46)
+    at Function.resolve (node:internal/modules/cjs/helpers:108:19)
+    at relativeRequire (/Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/utils.js:195:34)
+    at getAllTargets (/Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/angular/utils.js:76:37)
+    at getValidBuildTargets (/Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/angular/index.js:117:56)
+    at async prepareFrameworks (/Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:200:35)
+    at async deploy (/Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:57:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:16:23.236Z] ----------------------------------------------------------------------
+[debug] [2025-10-13T00:16:23.237Z] Command:       /usr/local/bin/firebase /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2025-10-13T00:16:23.237Z] CLI Version:   13.11.2
+[debug] [2025-10-13T00:16:23.237Z] Platform:      darwin
+[debug] [2025-10-13T00:16:23.237Z] Node Version:  v18.5.0
+[debug] [2025-10-13T00:16:23.238Z] Time:          Sun Oct 12 2025 19:16:23 GMT-0500 (Central Daylight Time)
+[debug] [2025-10-13T00:16:23.238Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-13T00:16:23.325Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-13T00:16:23.326Z] > authorizing via signed-in user (eduardocastellon2002@gmail.com)
+[debug] [2025-10-13T00:16:23.326Z] [iam] checking project desmontes-mapa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-10-13T00:16:23.328Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions [none]
+[debug] [2025-10-13T00:16:23.328Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions x-goog-quota-user=projects/desmontes-mapa
+[debug] [2025-10-13T00:16:23.329Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:16:23.804Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions 200
+[debug] [2025-10-13T00:16:23.806Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:16:23.808Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa [none]
+[debug] [2025-10-13T00:16:24.064Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa 200
+[debug] [2025-10-13T00:16:24.065Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa {"projectId":"desmontes-mapa","projectNumber":"391187962473","displayName":"desmontes-mapa","name":"projects/desmontes-mapa","resources":{"hostingSite":"desmontes-mapa"},"state":"ACTIVE","etag":"1_0f6f1fee-397e-42da-b0d6-85f8360fd6a6"}
+[debug] [2025-10-13T00:16:34.749Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:16:34.753Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:17:42.152Z] ----------------------------------------------------------------------
+[debug] [2025-10-13T00:17:42.153Z] Command:       /usr/local/bin/firebase /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2025-10-13T00:17:42.153Z] CLI Version:   13.11.2
+[debug] [2025-10-13T00:17:42.153Z] Platform:      darwin
+[debug] [2025-10-13T00:17:42.153Z] Node Version:  v18.5.0
+[debug] [2025-10-13T00:17:42.154Z] Time:          Sun Oct 12 2025 19:17:42 GMT-0500 (Central Daylight Time)
+[debug] [2025-10-13T00:17:42.154Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-13T00:17:42.241Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-13T00:17:42.242Z] > authorizing via signed-in user (eduardocastellon2002@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/macbookpro/Documents/Local/monolitos_mapas-main
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-10-13T00:17:49.118Z] Using project from CLI flag: desmontes-mapa
+[debug] [2025-10-13T00:17:49.122Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa [none]
+[debug] [2025-10-13T00:17:49.367Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa 200
+[debug] [2025-10-13T00:17:49.370Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa {"projectId":"desmontes-mapa","projectNumber":"391187962473","displayName":"desmontes-mapa","name":"projects/desmontes-mapa","resources":{"hostingSite":"desmontes-mapa"},"state":"ACTIVE","etag":"1_0f6f1fee-397e-42da-b0d6-85f8360fd6a6"}
+[info] i  Using project desmontes-mapa (desmontes-mapa) 
+[info] 
+=== Hosting Setup
+[debug] [2025-10-13T00:17:49.384Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa [none]
+[debug] [2025-10-13T00:17:49.568Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa 200
+[debug] [2025-10-13T00:17:49.569Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa {"projectId":"desmontes-mapa","projectNumber":"391187962473","displayName":"desmontes-mapa","name":"projects/desmontes-mapa","resources":{"hostingSite":"desmontes-mapa"},"state":"ACTIVE","etag":"1_0f6f1fee-397e-42da-b0d6-85f8360fd6a6"}
+[debug] [2025-10-13T00:17:57.917Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:17:57.921Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:19:12.956Z] ----------------------------------------------------------------------
+[debug] [2025-10-13T00:19:12.957Z] Command:       /usr/local/bin/firebase /Users/macbookpro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2025-10-13T00:19:12.958Z] CLI Version:   13.11.2
+[debug] [2025-10-13T00:19:12.958Z] Platform:      darwin
+[debug] [2025-10-13T00:19:12.958Z] Node Version:  v18.5.0
+[debug] [2025-10-13T00:19:12.962Z] Time:          Sun Oct 12 2025 19:19:12 GMT-0500 (Central Daylight Time)
+[debug] [2025-10-13T00:19:12.962Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-13T00:19:13.047Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-13T00:19:13.048Z] > authorizing via signed-in user (eduardocastellon2002@gmail.com)
+[debug] [2025-10-13T00:19:13.049Z] [iam] checking project desmontes-mapa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-10-13T00:19:13.051Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions [none]
+[debug] [2025-10-13T00:19:13.051Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions x-goog-quota-user=projects/desmontes-mapa
+[debug] [2025-10-13T00:19:13.052Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:19:13.617Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions 200
+[debug] [2025-10-13T00:19:13.619Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/desmontes-mapa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T00:19:13.621Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa [none]
+[debug] [2025-10-13T00:19:13.955Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa 200
+[debug] [2025-10-13T00:19:13.956Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/desmontes-mapa {"projectId":"desmontes-mapa","projectNumber":"391187962473","displayName":"desmontes-mapa","name":"projects/desmontes-mapa","resources":{"hostingSite":"desmontes-mapa"},"state":"ACTIVE","etag":"1_0f6f1fee-397e-42da-b0d6-85f8360fd6a6"}
+[debug] [2025-10-13T00:19:23.713Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-13T00:19:23.717Z] Error: Cannot find module @rollup/rollup-darwin-x64. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at requireWithFriendlyError (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:83:9)
+    at Object.<anonymous> (/Users/macbookpro/Documents/Local/monolitos_mapas-main/node_modules/vite/node_modules/rollup/dist/native.js:92:76)
+    at Module._compile (node:internal/modules/cjs/loader:1112:14)
+    at Module._compile (pkg/prelude/bootstrap.js:1890:32)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1166:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:834:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:170:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+[error] 
+[error] Error: An unexpected error has occurred.
