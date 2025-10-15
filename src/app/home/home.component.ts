@@ -1,12 +1,13 @@
 import { Component, HostListener, CUSTOM_ELEMENTS_SCHEMA, AfterViewInit } from '@angular/core';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
+import { PanoramaComponent } from '../panorama/panorama.component';
 
 declare var Reveal: any;
 
 @Component({
   selector: 'app-home',
   standalone: true, // This confirms it's a standalone component
-  imports: [PortfolioComponent], // For standalone, dependencies go here if needed
+  imports: [PortfolioComponent, PanoramaComponent], // For standalone, dependencies go here if needed
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA] // This is correct for allowing <model-viewer>

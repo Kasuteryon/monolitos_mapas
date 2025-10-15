@@ -184,7 +184,7 @@
           </a>
         </div>
 
-        <!-- Coactepec -->
+        <!-- Coactepec
 
         <div class="ag-courses_item">
           <a class="ag-courses-item_link">
@@ -193,9 +193,6 @@
             <div class="ag-courses-item_title">
              Coactepec
             </div>
-            <!-- <div>
-             Pequeña descripcion de localizacion o modelo, etc
-            </div> -->
             <br>
             <div class="ag-courses-item_date-box">
               Monolito en
@@ -211,7 +208,7 @@
               </button>
             </model-viewer>
           </a>
-        </div>
+        </div> -->
 
         <!-- Ixtapan del Oro -->
 
@@ -271,7 +268,7 @@
           </a>
         </div>
 
-        <!-- La Poza -->
+         <!-- La Poza 
 
         <div class="ag-courses_item">
           <a class="ag-courses-item_link">
@@ -280,9 +277,6 @@
             <div class="ag-courses-item_title">
               La Poza
             </div>
-            <!-- <div>
-             Pequeña descripcion de localizacion o modelo, etc
-            </div> -->
             <br>
             <div class="ag-courses-item_date-box">
               Monolito en
@@ -298,7 +292,7 @@
               </button>
             </model-viewer>
           </a>
-        </div>
+        </div> -->
 
         <!-- Montecillo -->
 
@@ -544,24 +538,25 @@
       </ul>
     </div>
 
-    <div class="glass">
-      <h3>Ubicación</h3>
-      <p>
-        Colegio de Postgraduados, Campus Montecillo.
-        <br>
-        Carretera México-Texcoco Km. 36.5, Montecillo, Texcoco, México, C.P. 56230.
-
-      </p>
-    </div>
-
-    <div class="map-responsive">
-      <iframe title="Mapa: Colegio de Posgraduados" id="gmap_canvas"
-        src="https://www.google.com/maps?hl=es&q=Carretera%20Federal%20M%C3%A9xico-Texcoco%20Km.%2036.5%20Montecillo,%2056264%20Texcoco%20de%20Mora,%20M%C3%A9x.&z=12&output=embed"
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-    </div>
 
     <br>
     <h2>Galería de Imágenes</h2>
+
+    <br>
+    <app-panorama
+      src="assets/360/fuera.jpg"
+      caption="Recorrido 360° — Sala principal"
+      aspectRatio="2 / 1"
+      [defaultFov]="70">
+    </app-panorama>
+    <br>
+
+    <app-panorama
+      src="assets/360/dentro.jpg"
+      caption="Recorrido 360° — Sala principal"
+      aspectRatio="2 / 1"
+      [defaultFov]="70">
+    </app-panorama>
     <br>
 
     <div class="video-responsive">
@@ -582,6 +577,22 @@
         <br>
         museodesuelo.colpos&#64;gmail.com
       </p>
+    </div>
+
+    <div class="glass">
+      <h3>Ubicación</h3>
+      <p>
+        Colegio de Postgraduados, Campus Montecillo.
+        <br>
+        Carretera México-Texcoco Km. 36.5, Montecillo, Texcoco, México, C.P. 56230.
+
+      </p>
+    </div>
+
+    <div class="map-responsive">
+      <iframe title="Mapa: Colegio de Posgraduados" id="gmap_canvas"
+        src="https://www.google.com/maps?hl=es&q=Carretera%20Federal%20M%C3%A9xico-Texcoco%20Km.%2036.5%20Montecillo,%2056264%20Texcoco%20de%20Mora,%20M%C3%A9x.&z=12&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
     </div>
 
     <!-- Fish and Seabed
